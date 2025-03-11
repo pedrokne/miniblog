@@ -1,0 +1,44 @@
+.post_detail {
+    max-width: 600px;
+    margin: 0 auto; /* Centraliza o post na tela */
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.post_detail img {
+    width: 100%; /* Garante que a imagem não ultrapasse o container */
+    max-height: 500px; /* Define uma altura máxima */
+    object-fit: cover; /* Mantém a proporção sem distorcer */
+    display: block;
+    margin: 0 auto 1em; /* Centraliza e adiciona espaçamento abaixo */
+    border-radius: 8px;
+}
+
+.post_detail h2{
+    margin-bottom: .4em;
+}
+
+.post_detail .tags{
+    margin-bottom: 1.2em;
+    display: flex;
+    justify-content: center; /* Centraliza as tags */
+    flex-wrap: wrap; /* Permite que quebrem linha se necessário */
+}
+
+.tags p{
+    margin-right: .5em;
+}
+
+.tags span{
+    font-weight: bold;
+}
+
+.createdBy{
+    font-style: italic;
+    color: #444;
+    font-size: 0.8em;
+    margin-bottom: 1em;
+}

@@ -1,0 +1,78 @@
+[debug] [2025-02-27T16:38:11.764Z] ----------------------------------------------------------------------
+[debug] [2025-02-27T16:38:11.767Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\pedro.knebel\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js login
+[debug] [2025-02-27T16:38:11.768Z] CLI Version:   13.31.2
+[debug] [2025-02-27T16:38:11.768Z] Platform:      win32
+[debug] [2025-02-27T16:38:11.768Z] Node Version:  v22.14.0
+[debug] [2025-02-27T16:38:11.768Z] Time:          Thu Feb 27 2025 13:38:11 GMT-0300 (Horário Padrão de Brasília)
+[debug] [2025-02-27T16:38:11.768Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-02-27T16:38:11.771Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[info] i  Firebase optionally collects CLI and Emulator Suite usage and error reporting information to help improve our products. Data is collected in accordance with Google's privacy policy (https://policies.google.com/privacy) and is not used to identify you.
+ 
+[debug] [2025-02-27T16:38:12.260Z] *** [apiv2] error from fetch(https://firebase-public.firebaseio.com/cli.json, {"headers":{},"method":"GET"}): FetchError: request to https://firebase-public.firebaseio.com/cli.json failed, reason: unable to verify the first certificate
+[warn] !  Unable to fetch the CLI MOTD and remote config. This is not a fatal error, but may indicate an issue with your network connection. 
+[debug] [2025-02-27T16:38:12.260Z] Failed to fetch MOTD FirebaseError: Failed to make request to https://firebase-public.firebaseio.com/cli.json
+[info] i  To change your data collection preference at any time, run `firebase logout` and log in again. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=981642193&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+[info] 
+[info] Waiting for authentication...
+[debug] [2025-02-27T16:38:49.094Z] >>> [apiv2][query] POST https://accounts.google.com/o/oauth2/token [none]
+[debug] [2025-02-27T16:38:49.094Z] >>> [apiv2][body] POST https://accounts.google.com/o/oauth2/token [omitted]
+[debug] [2025-02-27T16:38:49.273Z] *** [apiv2] error from fetch(https://accounts.google.com/o/oauth2/token, {"headers":{},"method":"POST","body":{"_overheadLength":543,"_valueLength":208,"_valuesToMeasure":[],"writable":false,"readable":true,"dataSize":0,"maxDataSize":2097152,"pauseStreams":true,"_released":true,"_streams":[],"_currentStream":null,"_insideLoop":false,"_pendingNext":false,"_boundary":"--------------------------382387833820594001692187","_events":{},"_eventsCount":1}}): FetchError: request to https://accounts.google.com/o/oauth2/token failed, reason: unable to verify the first certificate
+[debug] [2025-02-27T16:38:49.274Z] Token Fetch Error: FirebaseError: Failed to make request to https://accounts.google.com/o/oauth2/token
+    at RetryOperation._fn (C:\Users\pedro.knebel\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:261:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[error] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2025-02-27T16:38:49.281Z] >>> [apiv2][query] POST https://auth.firebase.tools/attest [none]
+[debug] [2025-02-27T16:38:49.281Z] >>> [apiv2][body] POST https://auth.firebase.tools/attest {"session_id":"df164000-2a62-4d26-86bd-d2063258fadc"}
+[debug] [2025-02-27T16:38:50.039Z] <<< [apiv2][status] POST https://auth.firebase.tools/attest 200
+[debug] [2025-02-27T16:38:50.039Z] <<< [apiv2][body] POST https://auth.firebase.tools/attest {"token":"gY-QSKB_G9rSbhYZZxaX3bGMY6r7aDHIkO4Y6mE8Tg0"}
+[info] 
+[info] To sign in to the Firebase CLI:
+[info] 
+[info] 1. Take note of your session ID:
+[info] 
+[info]    DF164
+[info] 
+[info] 2. Visit the URL below on any device and follow the instructions to get your code:
+[info] 
+[info]    https://auth.firebase.tools/login?code_challenge=sYBPPbOsJPjzHRzXwr8SiwBtSSDz7N6JXnLVMEj5euw&session=df164000-2a62-4d26-86bd-d2063258fadc&attest=gY-QSKB_G9rSbhYZZxaX3bGMY6r7aDHIkO4Y6mE8Tg0
+[info] 
+[info] 3. Paste or enter the authorization code below once you have it:
+[info] 
+[debug] [2025-02-27T16:39:46.325Z] ----------------------------------------------------------------------
+[debug] [2025-02-27T16:39:46.327Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\pedro.knebel\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js login --no-localhost
+[debug] [2025-02-27T16:39:46.327Z] CLI Version:   13.31.2
+[debug] [2025-02-27T16:39:46.327Z] Platform:      win32
+[debug] [2025-02-27T16:39:46.327Z] Node Version:  v22.14.0
+[debug] [2025-02-27T16:39:46.327Z] Time:          Thu Feb 27 2025 13:39:46 GMT-0300 (Horário Padrão de Brasília)
+[debug] [2025-02-27T16:39:46.327Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-02-27T16:39:46.330Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[info] i  Firebase optionally collects CLI and Emulator Suite usage and error reporting information to help improve our products. Data is collected in accordance with Google's privacy policy (https://policies.google.com/privacy) and is not used to identify you.
+ 
+[debug] [2025-02-27T16:39:46.719Z] *** [apiv2] error from fetch(https://firebase-public.firebaseio.com/cli.json, {"headers":{},"method":"GET"}): FetchError: request to https://firebase-public.firebaseio.com/cli.json failed, reason: unable to verify the first certificate
+[warn] !  Unable to fetch the CLI MOTD and remote config. This is not a fatal error, but may indicate an issue with your network connection. 
+[debug] [2025-02-27T16:39:46.720Z] Failed to fetch MOTD FirebaseError: Failed to make request to https://firebase-public.firebaseio.com/cli.json
+[info] i  To change your data collection preference at any time, run `firebase logout` and log in again. 
+[debug] [2025-02-27T16:39:49.545Z] >>> [apiv2][query] POST https://auth.firebase.tools/attest [none]
+[debug] [2025-02-27T16:39:49.545Z] >>> [apiv2][body] POST https://auth.firebase.tools/attest {"session_id":"12351427-ffcb-4452-aef5-300c75541bad"}
+[debug] [2025-02-27T16:39:50.183Z] <<< [apiv2][status] POST https://auth.firebase.tools/attest 200
+[debug] [2025-02-27T16:39:50.183Z] <<< [apiv2][body] POST https://auth.firebase.tools/attest {"token":"BTM5Sb0am0gQCiZJb-2YSrJbYSDBHd_66DwloFV4UL0"}
+[info] 
+[info] To sign in to the Firebase CLI:
+[info] 
+[info] 1. Take note of your session ID:
+[info] 
+[info]    12351
+[info] 
+[info] 2. Visit the URL below on any device and follow the instructions to get your code:
+[info] 
+[info]    https://auth.firebase.tools/login?code_challenge=nqu3P-6iwNKm0d4-Fh8EUemRlJ_WxiWKBweenja5_j8&session=12351427-ffcb-4452-aef5-300c75541bad&attest=BTM5Sb0am0gQCiZJb-2YSrJbYSDBHd_66DwloFV4UL0
+[info] 
+[info] 3. Paste or enter the authorization code below once you have it:
+[info] 
