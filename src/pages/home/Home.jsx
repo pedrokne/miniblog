@@ -6,7 +6,6 @@ import { useNavigate, Link } from "react-router-dom";
 import { useState } from "react";
 import { useFetchDocuments } from "../../hooks/useFetchDocuments";
 import PostDetail from "../../components/PostDetail";
-import { queryAllByAltText } from "@testing-library/dom";
 
 //components
 
